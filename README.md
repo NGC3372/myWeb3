@@ -9,6 +9,7 @@
 ## 使用
 * 初始化对象（默认连接ropsten公共测试链）
 ```python
+from myWeb3 import myWeb3
 w3 = myWeb3() 
 ```
 - 初始化账号
