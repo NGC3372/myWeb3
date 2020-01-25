@@ -19,7 +19,8 @@ w3.initAccount()
 - 获取账户余额
 ```python
 address = '0x61bEa2058e8d5a01F1f9898E49F53Cc3cc8E6520'
-w3.getBalance(address)
+balance = w3.getBalance(address)
+print(balance)
 ```
 - 发起交易
 ```python
