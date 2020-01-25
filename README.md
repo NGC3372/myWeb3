@@ -54,12 +54,14 @@ print(result)
 * 获取交易收据的详细信息
 ```python
 hashTx = '0xd89e41b784839210e83274576750affec8ee2f00a722b59882a7af8fd375db17'
-w3.getReceiptInfoFromHash(hashTx)
+result= w3.getReceiptInfoFromHash(hashTx)
+print(result)
 ```
 * 获取交易详细信息     
 ```python
 hashTx = '0xd89e41b784839210e83274576750affec8ee2f00a722b59882a7af8fd375db17'
-w3.getTransactionInfoFromHash(hashTx)
+result= w3.getTransactionInfoFromHash(hashTx)
+print(result)
 ```
 ## 注
 由于智能合约所用的solidity语言版本混乱，不同版本代码语法变化过多，本项目并没有实现本地编译solidity代码的功能（目前我只能通过代码编译6.0之后的solitidy代码，如后期寻找到解决方法我会补充）。部署和调用智能合约功能部分的函数所需参数：bytecode和ABI 均可通过在线solidity编译器[remix](http://remix.ethereum.org)内导出。当然，目前有更成熟的第三方工具提供合约的编写和部署等功能。如[Truffle](https://www.trufflesuite.com),感兴趣的可自行了解。
