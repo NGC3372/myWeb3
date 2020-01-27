@@ -6,7 +6,7 @@ class myWeb3:
     def __init__(self , web3Provider = None , chainID = None):
         if web3Provider is None:
             web3Provider = 'https://ropsten.infura.io/v3/83b3315113a246e88abb1268847b4a5b'
-            self.chainID = 3
+            chainID = 3
         self.chainID = chainID
         self.w3 = Web3(HTTPProvider(web3Provider))
         self.ETH = self.w3.eth
