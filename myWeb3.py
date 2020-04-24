@@ -1,5 +1,6 @@
 from  web3 import Web3 ,HTTPProvider
 
+
 class myWeb3:
     #对象初始化
     def __init__(self , web3Provider = None , chainID = None):
@@ -85,7 +86,7 @@ class myWeb3:
     #获取账户余额
     def getBalance(self , address = None):
         if address is None:
-            address = self.address
+            address = self.account.address
         balance = self.ETH.getBalance(address)
         return balance
     #获取交易收据的详细信息
